@@ -5,16 +5,27 @@ import  Navbar  from 'react-bootstrap/Navbar';
 export default function layout() {
   return (
     <>
-    <Navbar className='mt-3'>
-        <div className='flex gap-6 justify-evenly w-[100%] bg-slate-500 gap-3'>
-        <Link to="/">Home</Link>
-        <Link to="/blogs">Blogs</Link>
-        <Link to="/contact">Contact</Link>
-        <Link to="/Use">Use</Link>
-        <Link to="/Color">Color</Link>
+    <nav class="bg-gray-50 dark:bg-gray-700">
+    <div class="max-w-screen-xl px-4 py-3 mx-auto">
+        <div class="flex items-center">
+            <ul class="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
+                <li>
+                    <Link to="/" class="text-gray-900 dark:text-white hover:underline" aria-current="page">Home</Link>
+                </li>
+                <li>
+                    <Link to="/contact" class="text-gray-900 dark:text-white hover:underline">Contact</Link>
+                </li>
+                <li>
+                    <Link to="/Use" class="text-gray-900 dark:text-white hover:underline">UseState</Link>
+                </li>
+                <li>
+                    <Link to="/Color" class="text-gray-900 dark:text-white hover:underline">Color</Link>
+                </li>
+            </ul>
         </div>
-      </Navbar>
-      <Outlet/>
+    </div>
+</nav>
+<Outlet/>
     </>
   )
 }
