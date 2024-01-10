@@ -11,8 +11,8 @@ export default function Use() {
     }>Click Me</button>
 
     <p className={`text-xl m-3 bg-${color}-500 h-10 rounded-sm pl-5 pt-1`}>Background color</p>
-    <button className='bg-red-500 p-4 rounded m-3 h-[3rem] w-[7rem] text-center justify-evenly' onClick={
-        ()=>setColor('slate')
+    <button className='bg-red-500 p-4 rounded m-3 h-[3rem] w-[7rem] text-center justify-evenly ' onClick={
+        ()=>setColor('blue')
     }>Click me!!</button>
     </>
   )
